@@ -1,0 +1,125 @@
+body{
+    font-family: 'Cinzel', serif;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Inconsolata', monospace;
+font-family: 'Merriweather', serif;
+font-family: 'Tenor Sans', sans-serif;
+background-color: #b09579;
+}
+
+
+.menu{
+    background-color: white ;
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    box-shadow: 5px 0 10px black;
+}
+
+.logo{
+    color: #b09579;
+    font-size: 35px;
+    padding: 0 80px;
+    font-weight: bold;
+
+}
+
+.menuItems{
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.menuItems li{
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.menuItems li a{
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+  color:  #b09579 ;
+}
+
+.menuItems li:hover, li.active {
+    background-color: rgba(175, 167, 167, 0.445) ;
+    transition: .4s;
+}
+
+.btnMenu{
+    margin-right: 30px;
+    font-size: 25px;
+    color: #b09579;
+    cursor: pointer;
+    display: none;
+}
+
+
+ul.show{
+    top: 65px ;
+
+}
+
+@media screen and (max-width: 952px) {
+
+    .logo{
+        font-size: 25px;
+        padding-left: 35px;
+        justify-content: center;
+    }
+
+    .menuItems li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 858px) {
+
+    .menu{
+        height: 65px;
+    }
+    .btnMenu {display: inline-block;}
+
+    .menuItems{
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background: white ;
+        top: -100vh;
+        text-align: center;
+        transition: .4s;
+        flex-direction: column;
+    }
+
+    .menuItems li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+
+.menuItems li:hover{
+    background: none;
+}
+
+.menuItems li a{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.menuItems li a {
+    color: #b09579;
+}
+
+.logo{
+    font-size: 25px;
+    padding-left: 35px;
+}
+
+
+
+}
